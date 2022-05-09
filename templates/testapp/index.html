@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Employee Information</h1><hr>
+    
+    <table border=2>
+        <thead>
+            <th>Employee Number</th>
+            <th>Employee First_Name</th>
+            <th>Employee Last_Name</th>
+            <th>Employee Salary</th>
+            
+            <th>Employee Bonus</th>
+    
+            <th>Employee Phone</th>
+            <th>Employee Hire_Date</th>
+            <th>Employee Department</th>
+            <th>Employee Role</th>
+        </thead>
+        
+        <tr>
+            <td>{{emp.eno}}</td>
+            <td>{{emp.efirst_name}}</td>
+            <td>{{emp.elast_name}}</td>
+            <td>{{emp.esal}}</td>
+            
+            <td>{{emp.ebonus}}</td>
+            
+            <td>{{emp.ephone}}</td>
+            <td>{{emp.ehire_date}}</td>
+            <td>{{emp.edept}}</td>
+            <td>{{emp.erole}}</td>
+        </tr>
+        
+    </table>
+    
+        
+            
+    
+    
+    <p>No Employee Records Found!!!</p>
+    
+    <h2>Department Information</h2><hr>
+    
+    <table border=2>
+        <thead>
+            
+            <th>Department Name</th>
+            <th>Department Location</th>
+        </thead>
+        {%for dept in departments%}
+        <tr>
+    
+            <td>{{dept.ename}}</td>
+            <td>{{dept.elocation}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+    
+        <p>No departments Records Found!!!</p>
+
+        <h3>Role Information</h3><hr>
+    
+    <table border=2>
+        <thead>
+        
+            <th>Role Name</th>
+            
+        </thead>
+        {%for role in roles%}
+        <tr>
+
+            <td>{{role.ename}}</td>
+            
+        </tr>
+        {%endfor%}
+    </table>
+
+        <p>No roles Records Found!!!</p>
+</body>
+</html>   
+        
+    
+    
+
+
+
+
+
